@@ -1,5 +1,31 @@
 .col-xl-4 img {
     width: 500px;
+    height: 350px;
+    padding-bottom: 5px;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: lightblue;
+    height: 100%;
 }
 
 header {
@@ -59,4 +85,40 @@ header .current-nav-link,
 .nav-link:hover {
     color: black;
     transform: scale(1.1);
+}
+
+header * {
+    box-sizing: content-box;
+}
+
+footer {
+    background: lightpink;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    header .nav-links {
+        display: block;
+        flex: 1;
+        margin: 10px;
+    }
+    header .current-nav-link,
+    .nav-link:hover {
+        transform: scale(1.0);
+    }
+    header .logo-container {
+        font-size: 40px;
+        padding-left: 0%;
+        margin-left: 5px;
+        flex: 1;
+    }
+    header .logo-container p,
+    main .showcase-text p {
+        display: none;
+    }
+    main .showcase-text h1 {
+        font-size: 40px;
+    }
 }
