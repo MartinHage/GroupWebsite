@@ -8,7 +8,7 @@ let src = "../img/gallery/";
 
 for (let i = 1; i <= 27; i++) {
     let col = document.createElement("div")
-    col.className = "col-xl-4 col-xs-6"
+    col.className = "col-xl-4 col-sm-6"
     let img = document.createElement("img")
     img.className = "animal-pic"
     img.src = src + i + ".jpg"
