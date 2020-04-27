@@ -15,16 +15,43 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
 </head>
 
 <body>
+
+    <header>
+        <section class="logo-container">
+            <div class="logo-box">
+
+            </div>
+            <div class="text-box">
+                <h4 class="logo">Doggur</h4>
+                <p>Share your animals pictures online!</p>
+            </div>
+        </section>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a class="current-nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="gallery.html">Our Gallery</a></li>
+                <li><a class="nav-link" href="#">Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <form action="./upload.php" method="POST" enctype="multipart/form-data">
         <input type="file" name="file">
         <input type="submit" name="submit">
     </form>
 
     <script type="text/javascript" src="./scripts/gallery.js"></script>
+
+    <footer>
+        <p> Doggur, Copyright &copy; 2020 </p>
+
+    </footer>
 
 </body>
 
